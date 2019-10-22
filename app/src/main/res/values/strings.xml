@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">BeautySalon</string>
+    <string name="login">Login</string>
+    <string name="signup">Sign up</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="already_have_an_account">Already have an account ?</string>
+    <string name="signin">Sign in</string>
+    <string name="businessname">Business Name</string>
+    <string name="location">Location</string>
+    <string name="search">Search by Location,Area</string>
+    <string name="profile">Profile</string>
+    <string name="buildingnumber">Building Number</string>
+    <string name="zonenumber">Zone Number</string>
+    <string name="streetnumber">Street Number</string>
+    <string name="streetname">Street Name</string>
+    <string name="update">Update Profile</string>
+    <string name="app_backpress">Press again to exit</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_record_found">No record found</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+</resources>

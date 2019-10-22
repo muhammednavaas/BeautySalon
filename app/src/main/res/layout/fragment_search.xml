@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edtSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/m20dp"
+            android:layout_marginTop="@dimen/m20dp"
+            android:layout_marginRight="@dimen/m20dp"
+            android:background="@drawable/bg_search"
+            android:drawableLeft="@drawable/ic_search"
+            android:drawablePadding="@dimen/m10dp"
+            android:hint="@string/search"
+            android:imeActionId="@+id/SearchBtn"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:padding="@dimen/m10dp"
+            android:textSize="@dimen/primaryText" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/m20dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/titleText"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/m10dp"
+        android:layout_marginRight="@dimen/m10dp"
+        android:gravity="fill_vertical"
+        android:nestedScrollingEnabled="false"
+        android:visibility="visible"
+       app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:spanCount="3"
+        tools:listitem="@layout/item_view" />
+
+    <LinearLayout
+        android:id="@+id/llNorecord"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvNorecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_record_found"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/primaryText" />
+
+    </LinearLayout>
+</LinearLayout>
